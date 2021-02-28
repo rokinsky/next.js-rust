@@ -1,5 +1,9 @@
 # Next.js with WebAssembly boilerplate based on Rust
 
+🦀 Rust + 🕸 WebAssembly + ▲ Next.js = ❤️
+
+## Overview
+
 This code shows how to import WebAssembly files (`.wasm`) and use them inside a React (client-side) and Node (server-side) using Next.js. Here Rust is compiled to WebAssembly and wrapped in a npm package automatically generating `package.json`, `.wasm`, `.js` and `.d.ts` files.
 
 ## Requirements
@@ -16,19 +20,16 @@ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 
 ## How to use
 
-Compile Rust code run:
-```bash
-yarn rust:build
-```
-
-Add package locally:
-```bash
-yarn add wasm@file:wasm/pkg
-```
-
 Install other dependencies:
 ```bash
 yarn install
+```
+
+### Development
+
+Compile Rust code run:
+```bash
+yarn rust:dev
 ```
 
 Run dev server:

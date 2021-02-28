@@ -14,6 +14,6 @@ export const calculateMaximumWealthWithJs = (length: number): number => {
 export const calculateMaximumWealthWithWasm = async (
   length: number
 ): Promise<number> => {
-  const wasm = await import("wasm");
+  const wasm = await import("@/crate/pkg/wasm");
   return wasm.calculate_maximum_wealth(length);
 };

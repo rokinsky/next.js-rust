@@ -6,15 +6,15 @@
   "dependencies": {
     "next": "latest",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "wasm": "file:wasm/pkg"
+    "react-dom": "^17.0.1"
   },
   "scripts": {
     "next:dev": "next",
     "next:build": "next build",
     "next:start": "next start",
-    "rust:build": "wasm-pack build wasm",
-    "rust:test": "wasm-pack test --headless --firefox wasm"
+    "rust:dev": "cd crate && cargo watch -i 'pkg/*' -s 'wasm-pack build'",
+    "rust:build": "wasm-pack build crate",
+    "rust:test": "wasm-pack test --headless --firefox crate"
   },
   "devDependencies": {
     "@rokinsky/eslint-config": "^1.0.0",

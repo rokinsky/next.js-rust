@@ -1,5 +1,5 @@
-import { apiBenchmark } from "@/src/api-benchmark";
-import { calculateMaximumWealthWithJs } from "@/src/maximum-wealth";
+import { apiBenchmark } from "@/src/benchmarks/api-benchmark";
+import { calculateMaximumWealthWithJs } from "@/src/benchmarks/maximum-wealth";
 
 const jsBenchmark = apiBenchmark(calculateMaximumWealthWithJs);
 

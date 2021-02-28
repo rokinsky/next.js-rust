@@ -1,6 +1,6 @@
 import { FC, useEffect } from "react";
 
-import * as wasm from "wasm";
+import * as wasm from "@/crate/pkg/wasm";
 
 const GreetComponent: FC = () => {
   useEffect(() => {
