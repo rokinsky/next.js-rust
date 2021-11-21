@@ -1,8 +1,8 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiHandler } from "next";
 
 export type ApiBenchmark = (
   fn: (length: number) => number | Promise<number>
-) => (req: NextApiRequest, res: NextApiResponse) => Promise<void>;
+) => NextApiHandler;
 
 export const apiBenchmark: ApiBenchmark = (fn) => async (req, res) => {
   const startTime = Date.now();

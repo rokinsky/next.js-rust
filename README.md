@@ -36,3 +36,8 @@ Run dev server:
 ```bash
 yarn next:dev
 ```
+
+### Performance
+
+The [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) task with the same algorithm solution was used as a basic performance test.
+You can compare performance using the following endpoints: `/api/js/[number]` and `/api/wasm/[number]`.

@@ -5,8 +5,8 @@
   "sideEffects": false,
   "dependencies": {
     "next": "latest",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "scripts": {
     "next:dev": "next",
@@ -17,19 +17,22 @@
     "rust:test": "wasm-pack test --headless --firefox crate"
   },
   "devDependencies": {
-    "@rokinsky/eslint-config": "^1.0.0",
+    "@rokinsky/eslint-config": "^1.4.0",
     "@rokinsky/prettier-config": "^1.0.0",
-    "@rokinsky/tsconfig": "^1.1.0",
-    "@types/node": "^14.14.31",
-    "@types/react": "^17.0.2",
-    "eslint": "^7.21.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.2"
+    "@rokinsky/tsconfig": "^2.0.0",
+    "@types/node": "^16.11.9",
+    "@types/react": "^17.0.35",
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.2"
   },
   "prettier": "@rokinsky/prettier-config",
   "eslintConfig": {
     "extends": [
       "@rokinsky/eslint-config"
-    ]
+    ],
+    "parserOptions": {
+      "project": "tsconfig.json"
+    }
   }
 }
